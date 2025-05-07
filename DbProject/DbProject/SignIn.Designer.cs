@@ -38,7 +38,7 @@
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.panelRight = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSignIn = new DbProject.CodedButton();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelRight.SuspendLayout();
@@ -127,7 +127,7 @@
             // 
             // panelRight
             // 
-            this.panelRight.Controls.Add(this.button1);
+            this.panelRight.Controls.Add(this.btnSignIn);
             this.panelRight.Controls.Add(this.txtpassword);
             this.panelRight.Controls.Add(this.txtusername);
             this.panelRight.Controls.Add(this.label3);
@@ -139,17 +139,25 @@
             this.panelRight.Size = new System.Drawing.Size(536, 642);
             this.panelRight.TabIndex = 2;
             // 
-            // button1
+            // btnSignIn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(161, 491);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 54);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Sign IN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnSignIn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnSignIn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSignIn.BorderRadius = 20;
+            this.btnSignIn.BorderSize = 0;
+            this.btnSignIn.FlatAppearance.BorderSize = 0;
+            this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignIn.Font = new System.Drawing.Font("Yu Gothic UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.ForeColor = System.Drawing.Color.White;
+            this.btnSignIn.Location = new System.Drawing.Point(111, 485);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(234, 69);
+            this.btnSignIn.TabIndex = 5;
+            this.btnSignIn.Text = "SIGN IN";
+            this.btnSignIn.TextColor = System.Drawing.Color.White;
+            this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // SignIN
             // 
@@ -180,6 +188,6 @@
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Panel panelRight;
-        private System.Windows.Forms.Button button1;
+        private CodedButton btnSignIn;
     }
 }

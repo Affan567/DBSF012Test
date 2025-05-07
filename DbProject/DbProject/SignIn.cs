@@ -18,9 +18,9 @@ namespace DbProject
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSignIn_Click(object sender, EventArgs e)
         {
-            
+
             //LogIN Button Implementaion            
             string username = txtusername.Text.Trim(); // Removes extra spaces
             string password = txtpassword.Text.Trim();
